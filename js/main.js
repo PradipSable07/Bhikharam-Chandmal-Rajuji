@@ -60,60 +60,67 @@
 	// Testimonials data
 	var testimonials = [
 		{
-			image: "img/testimonial-1.jpg",
-			name: "John Doe",
-			stars: 4,
-			message:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.",
-		},
-		{
-			image: "img/client-1.png",
-			name: "John Doe",
-			stars: 3,
-			message:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.",
-		},
-		{
-			image: "img/client-2.png",
-			name: "John Doe",
+			image: "../img/review/Image1.jpg",
+			name: "Akansha Ganguly",
 			stars: 5,
 			message:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.",
+				"Bhikhaaram Chandmal Rajuji ke samose aur kachori, wahi purani yaadon ko taaza kar dete hain! Must try!",
 		},
 		{
-			image: "img/client-3.png",
-			name: "John Doe",
+			image: "../img/review/Image-6.jpg",
+			name: "Raj Chandak",
 			stars: 4,
 			message:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.",
+				"Bhikhaaram Chandmal Rajuji yani 100% swaad. Aisa swaad ko sabko jeet le",
 		},
 		{
-			image: "img/testimonial-1.jpg",
-			name: "John Doe",
+			image: "../img/review/image2.jpg",
+			name: "Muskan Patodia",
 			stars: 5,
 			message:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.",
+				"Inki mithaiyan ekdum zabardast hai! Unki motichoor ladoo toh bas dil jeet lete hain! Ladoo yani Rajuji",
 		},
-		// Add more testimonials as needed
+		{
+			image: "../img/review/Image4.jpg",
+			name: "Harsh Singh",
+			stars: 5,
+			message: "Agar kolkata aae toh Bhikhaaram Chandmal Rajuji zaroor jaana",
+		},
+		{
+			image: "../img/review/Image-5.jpg",
+			name: "Rajesh Mittal",
+			stars: 4,
+			message:
+				"Jalebi ho toh Bhikhaaram Chandmal Rajuji ki. Hazar baar kha ke bhi maan nhi bharta hai.",
+		},
+		{
+			image: "../img/review/Image3.jpg",
+			name: "Hitesh Rathi",
+			stars: 5,
+			message:
+				"Swad ka sahi naam *Rajuji. Yahan kuch bhi kha lo dil garden-garden ho jata hai! Bahut hi swaadisht hai!",
+		},
 	];
 
 	// Populate testimonial carousel
 	$.each(testimonials, function (index, testimonial) {
 		var item = $("<div>").addClass(
-			"testimonial-item img-border-radius bg-transparent rounded p-4"
+			"testimonial-item img-border-radius bg-transparent rounded p-4 pt-0"
 		);
 		var positionRelative = $("<div>").addClass("position-relative");
 		var quoteIcon = $("<i>")
 			.addClass(
-				"fa fa-quote-right fa-2x text-secondary position-absolute d-none d-sm-block"
+				"fa fa-quote-right fa-2x text-yellow position-absolute d-none d-sm-block"
 			)
 			.css({ bottom: "30px", right: "0" });
 		var contentWrapper = $("<div>").addClass(
 			"mb-4 pb-4 border-bottom border-secondary"
 		);
-		var message = $("<p>").addClass("mb-0").text(testimonial.message);
+		var message = $("<p>")
+			.addClass("mb-0 text-white text-capitalize text-cocon")
+			.text(testimonial.message);
 		var authorInfo = $("<div>").addClass(
-			"d-flex align-items-center flex-nowrap"
+			"d-flex align-items-center text-secondary flex-nowrap"
 		);
 		var imageWrapper = $("<div>").addClass("bg-transparent rounded");
 		var img = $("<img>")
@@ -122,15 +129,17 @@
 			.css({ width: "100px", height: "100px" })
 			.attr("alt", "");
 		var textWrapper = $("<div>").addClass("ms-4 d-block");
-		var authorName = $("<h4>").addClass("text-dark").text(testimonial.name);
-		var authorTitle = $("<p>").addClass("m-0 pb-3").text(testimonial.title);
+		var authorName = $("<h4>")
+			.addClass("text-white text-montserrat")
+			.text(testimonial.name);
+		var authorTitle = $("<p>").addClass("m-0  pb-3").text(testimonial.title);
 		var starWrapper = $("<div>").addClass("d-flex pe-5");
 
 		// Add stars if provided in the testimonial object
 		if (testimonial.stars) {
 			for (var i = 0; i < 5; i++) {
 				var starIcon = $("<i>").addClass(
-					"fas fa-star" + (i < testimonial.stars ? " text-primary" : "")
+					"fas fa-star" + (i < testimonial.stars ? " text-yellow" : "")
 				);
 				starWrapper.append(starIcon);
 			}
@@ -153,7 +162,7 @@
 		margin: 10,
 		nav: false,
 		autoplay: true,
-		autoplayTimeout: 1000, // Autoplay interval in milliseconds
+		autoplayTimeout: 1500, // Autoplay interval in milliseconds
 		autoplayHoverPause: true, // Pause autoplay on hover
 		mouseDrag: true, // Enable mouse drag
 		touchDrag: true, // Enable touch drag
@@ -229,14 +238,14 @@
 		}
 	});
 
-	const togglefun = () => {
-		const sidebar = document.querySelector("#side");
+	// const togglefun = () => {
+	// 	const sidebar = document.querySelector("#side");
 
-		sidebar.style.display = sidebar.style.display === "none" ? "flex" : "none";
-		console.log(sidebar.style.display);
-	};
-	togglefun();
-	document
-		.querySelector(".menu-icn-container")
-		.addEventListener("click", togglefun);
+	// 	sidebar.style.display = sidebar.style.display === "none" ? "flex" : "none";
+	// 	console.log(sidebar.style.display);
+	// };
+	// togglefun();
+	// document
+	// 	.querySelector(".menu-icn-container")
+	// 	.addEventListener("click", togglefun);
 })(jQuery);

@@ -49,18 +49,10 @@
 
 
     <!-- Navbar start -->
-    <!-- <header class="container-fluid py-2 nav-header ">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 text-center">
-                <div class="logo ">
-                    <img src="../logo_site_full.jpg" alt="Logo" class="img-fluid header-img" />
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light sticky-top bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-transparent sticky-top bg-white">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="/index.html">
                 <img src="../logo_site_full.jpg" alt="Logo" class="d-lg-none d-md-none w-25 h-25" />
             </a>
             <button class="navbar-toggler p-1 bg-light rounded-circle" type="button" data-toggle="collapse"
@@ -69,9 +61,9 @@
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-md-center align-content-md-center"
                 id="navbarNav">
-                <ul class="navbar-nav font-weight-bold">
+                <ul class="navbar-nav font-weight-bold align-items-center">
                     <li class="nav-item active ">
-                        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="index.html">Home</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="./about.html">About Us</a>
@@ -79,9 +71,9 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="./products.html">Our Products</a>
                     </li>
-                    <li class="nav-item text-center ">
-                        <a class="navbar-brand" href="#">
-                            <img src="../logo_site_full.jpg" alt="Logo" class=" w-50 " />
+                    <li class="nav-item navbar-brand text-center d-none accordion-body d-md-block d-lg-block ">
+                        <a class="" href="#">
+                            <img src="/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo" class="nav-png " />
                         </a>
                     </li>
 
@@ -106,16 +98,19 @@
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active c-item">
-                    <img class="d-block w-100 c-img" src="/Banner_1.png" alt="First slide">
+                    <img class="d-block w-100 c-img" src="./img/banners/Banner_holi.jpg" alt="First holi slide">
+                </div>
+                <div class="carousel-item  c-item">
+                    <img class="d-block w-100 c-img" src="./img/banners/Banner_1.png" alt="First slide">
                 </div>
                 <div class="carousel-item c-item">
-                    <img class="d-block w-100 c-img" src="./bhikaram_banner_2.jpg" alt=" Second slide">
+                    <img class="d-block w-100 c-img" src="./img/banners/bhikaram_banner_2.jpg" alt=" Second slide">
                 </div>
                 <div class="carousel-item c-item">
-                    <img class="d-block w-100 c-img" src="./bhikaram_banner_3.jpg" alt="Third slide">
+                    <img class="d-block w-100 c-img" src="./img/banners/bhikaram_banner_3.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item c-item">
-                    <img class="d-block w-100 c-img" src="./bhikaram_banner_4.jpg" alt="Third slide">
+                    <img class="d-block w-100 c-img" src="./img/banners/bhikaram_banner_4.jpg" alt="Third slide">
                 </div>
             </div>
             <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -143,83 +138,92 @@
         <div class="container-fluid featurs" data-aos="fade-down">
             <div class="container py-3">
                 <div class="row g-2">
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
                         <div class="featurs-item text-center rounded p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Kankurgachi</p>
+                                <a href="stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Kankurgachi</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="125" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="125">
+                        <div class="featurs-item text-center  rounded  p-4">
+
+                            <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
+                            <div class="featurs-content text-center">
+
+                                <a href="stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Bangur</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Bangur</p>
+                                <a href="stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Ram Mandir</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="175">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Ram Mandir</p>
+                                <a href="/stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Burra Bazar</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="175" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Burra Bazar</p>
+                                <a href="/stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Howrah</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="225">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Howrah</p>
+                                <a href="/stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Liluah</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="225" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Liluah</p>
+                                <a href="/stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Chinar Park</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="2000">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="275">
                         <div class="featurs-item text-center rounded  p-4">
 
                             <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
                             <div class="featurs-content text-center">
 
-                                <p class="mb-0 fw-bold  text-uppercase">Chinar Park</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="275" data-aos-duration="2000">
-                        <div class="featurs-item text-center rounded  p-4">
-
-                            <i class="bi bi-geo-alt fa-3x" style="color: coral;"></i>
-                            <div class="featurs-content text-center">
-
-                                <p class="mb-0 fw-bold  text-uppercase">Brabourne Road</p>
+                                <a href="/stores.html"
+                                    class="mb-0 fw-bold text-decoration-none  text-dark text-uppercase">Brabourne
+                                    Road</a>
                             </div>
                         </div>
                     </div>
@@ -287,21 +291,19 @@
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="py-4">
-                        <h1 class="display-3 text-white">Specialty For Every Occasion</h1>
+                        <h1 class="banner-heading text-montserrat text-white">Specialty For Every Occasion</h1>
 
-                        <p class="mb-4 text-cocon text-white">Sweets have been the part of every tradition and folklore.
+                        <p class="mb-4 banner-text text-justify text-cocon text-white">Sweets have been the part of
+                            every tradition.
                             Bhikhaaram
                             Chandmal Rajuji has always made sure that you celebrate every occasion with the
-                            purity
-                            and
-                            taste of the sweets that make memories.</p>
-                        <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-warning py-3 px-5"
-                            id="banner-btn">LEARN MORE</a>
+                            best and purest sweets, creating lasting memories.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <img src="/rasgulla.png" class="img-fluid w-100 rounded-3" alt="">
+                        <img src="/rasgulla.png" class="img-fluid  banner-img rounded-3" alt="">
 
                     </div>
                 </div>
@@ -319,26 +321,26 @@
 
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <img src="/BHUJIYA.png" class="img-fluid w-100 rounded-3" alt="">
+                        <img src="/BHUJIYA.png" class="img-fluid  banner-img rounded-3" alt="">
 
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="py-4 text-end">
-                        <h1 class="display-3 text-white">The Taste of Fresh Snacks</h1>
+                        <h1 class="banner-heading text-montserrat text-white">The Taste of Fresh Snacks</h1>
 
-                        <p class="mb-4 text-white">Occasion or just a tea time, the fresh taste of bhujia
+                        <p class="banner-text banner-text-2 mb-4 text-cocon text-white">Any occasion or
+                            your evening
+                            tea
+                            time, enjoy the
+                            fresh taste
+                            of Bhikhaaram Chandmal Rajuji bhujia
                             and
                             snacks
-                            by
-                            Bhikhaaram Chandmal Rajuji brings the joy of taste and spice. Enjoy various
-                            snacks
-                            with
-                            your
-                            friends and family, share the taste, spread happiness.</p>
-                        <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-warning py-3 px-5"
-                            id="banner-btn">LEARN MORE</a>
+                            .
+                        </p>
+
                     </div>
                 </div>
 
@@ -354,18 +356,32 @@
     <div class="offer-section container-fluid  ">
         <div class="container py-lg-5 py-md-2 bg-transparent p-3 bg-body">
             <div class="row text-center">
-                <div class="col-lg-12 ">
-                    <h4 class="text-white">Enquiring about Bulk Orders? </h4>
-                    <button class="py-2 px-4 btn-outline-success rounded-pill">Enquire</button>
+                <div class="col-lg-6 text-start ">
+                    <h3 class="offer-section-heading text-montserrat text-uppercase">
+                        For Corporate Inquiries
 
-
+                    </h3>
+                    <p class="offer-section-text text-cocon text-capitalize "> Contact us : 98319 93251</p>
                 </div>
+                <div class="col-lg-6 text-end ">
+                    <h3 class="offer-section-heading text-montserrat text-uppercase">
+                        For Wholesale Inquiries
+
+                    </h3>
+                    <p class="offer-section-text text-cocon text-capitalize "> Contact us : 93312 13544</p>
+                </div>
+
+
             </div>
         </div>
+
 
         <!-- Offer Section start -->
 
         <!-- testimonial start -->
+        <h1 class="text-center mb-0 text-montserrat text-white text-capitalize">
+            Customer Feedbacks
+        </h1>
         <section class="testimonial">
             <div class="owl-carousel owl-theme">
                 <!-- Testimonial items will be dynamically added here -->
@@ -378,22 +394,37 @@
     <!-- Footer Start -->
     <footer class="container-fluid overflow-hidden text-white-50 footer">
         <div class="container footer-content py-5">
-            <div class="pb-4 mb-5">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <a href="/about.html" class="text-decoration-none">
-                            <h1 class="brand-name mb-0">Bhikharam Chandmal Rajuji</h1>
-                        </a>
-                    </div>
+            <div class="row ">
+                <div class="col-lg-4 ">
+                    <h1 class="text-dark text-montserrat   footer-heading text-uppercase">celebrate the <br>
+                        <span class="text-dark ">taste</span>
+                    </h1>
+                    <p class="text-cocon footer-body mb-0  w-75 text-black-50 text-justify ">
+                        Celebrate every occasion with the purity of sweet and snacks from the house of
+                        <span class="text-dark footer-subheading  text-montserrat text-uppercase ">Bhikharam <br>
+                            Chandmal
+                            Rajuji
+                        </span>
+                    </p>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center  ">
+                    <img src="/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid footer-img" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column justify-content-center align-items-end gap-2 ">
 
-                    <div class="col-lg-6">
-                        <div class="d-flex justify-content-end pt-3">
-                            <a class="btn  btn-outline-dark me-2 btn-md-square rounded-circle"
-                                href="https://www.instagram.com/bhikharamchandmalrajuji/">
-                                <i class="bi bi-envelope"></i></a>
-                            <a class="btn btn-outline-dark me-2 btn-md-square rounded-circle"
-                                href="https://www.instagram.com/bhikharamchandmalrajuji/">
-                                <i class="bi bi-instagram"></i></a>
+
+                        <div class="footer-item ">
+
+                            <a href="/contact.html"
+                                class="text-dark footer-contact text-decoration-none text-montserrat text-uppercase ">Contact
+                                Us</a>
+                            <p class="mb-1 text-capitalize">HO: 3B, brijodulal street, kolkata - 700006 </p>
+                            <p class="mb-1">info@bhikharamchandmalrajuji.com</p>
+                            <p class="mb-1 text-capitalize">Phone: 03346036414, 8100425131</p>
+                        </div>
+
+                        <div class="w-100 d-flex justify-content-center align-items-center pt-3">
                             <a class="btn btn-outline-dark me-2 btn-md-square rounded-circle"
                                 href="https://www.facebook.com/BhikharamChandmalRajuji/">
                                 <i class="bi bi-facebook"></i></a>
@@ -401,33 +432,21 @@
                                 href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
                                 <i class="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6 col-md-6">
-                    <div class="footer-item">
-                        <h4 class=" mb-3">Why People Like us!</h4>
-                        <p class="mb-4">typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                        <a href="./about.html" class="btn  py-2 px-4 rounded-pill btn-outline-dark text-literal">Read
-                            More</a>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6">
-                    <div class="footer-item">
-                        <h4 class=" mb-3">Contact</h4>
-                        <p>Address: 1429 Netus Rd, NY 48247</p>
-                        <p>info@bhikharamchandmalrajuji.com</p>
-                        <p>Phone: +0123 4567 8910</p>
-                        <p>Payment Accepted</p>
-                        <img src="img/payment.png" class="img-fluid" alt="">
                     </div>
+
                 </div>
             </div>
         </div>
+
     </footer>
+    <div class="container-fluid footer-copyright text-center py-3 m-0">
+        <p class="mb-0 text-cocon ">Copyright @ Bhikharam
+            Chandmal
+            Rajuji | Developed with <i class="fa fa-heart text-danger"></i> by <a class="text-decoration-none text-dark"
+                href="https://markcos.agency/">MarkCos
+                Agency</a></p>
+    </div>
     <!-- Footer End -->
 
 

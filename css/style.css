@@ -1,11 +1,15 @@
+@font-face {
+	font-family: CoconCustom;
+	src: url("/css/CoconRegularFont.otf");
+}
+@font-face {
+	font-family: MontserratBlack;
+	src: url("/css/Montserrat-Black.ttf");
+}
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-}
-@font-face {
-	font-family: cocon;
-	src: url("/css/CoconRegularFont.otf");
 }
 
 :root {
@@ -52,16 +56,19 @@ nav .btn-circle {
 	box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
 	color: #000000;
 }
-
+.nav-png {
+	width: 6rem;
+	margin: 0 1rem;
+}
 nav .nav-link {
 	color: rgb(240, 32, 32);
-	font-family: "Oswald", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
 }
-nav .nav-item:active {
+/* nav .nav-item:active {
 	color: var(--color-quaternary);
-	font-family: "Oswald", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	box-shadow: 0 0 10px #d68d5c;
 	border-radius: 15px;
@@ -69,14 +76,14 @@ nav .nav-item:active {
 }
 nav .nav-link:hover {
 	color: #d68d5c;
-	font-family: "Oswald", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
-	/* border: #14094d63 1px solid; */
+	border: #14094d63 1px solid;
 	box-shadow: 0 0 10px #d68d5c;
 	border-radius: 15px;
 	background: #dc92926f;
-}
+} */
 
 @media (max-width: 672px) {
 	.navs {
@@ -236,8 +243,7 @@ nav .menu__link::before {
 
 .c-img {
 	height: 100%;
-	/* object-fit: cover; */
-	filter: brightness(0.9);
+	/* filter: brightness(0.9); */
 }
 
 .carousel-control-next,
@@ -276,23 +282,41 @@ nav .menu__link::before {
 .location {
 	padding-top: 1rem;
 	text-align: center;
+	font-family: MontserratBlack;
 	/* margin-top: 4rem; */
 }
 .location h1 {
 	font-size: 3rem;
-	color: rgb(81, 43, 29);
+	font-family: MontserratBlack;
+
+	color: rgb(120, 63, 42);
 }
 .featurs .featurs-item {
-	background: var(--color-tertiary-light);
-	color: var(--color-secondary);
+	background: rgba(255, 255, 255, 0.55);
+	box-shadow: 0 8px 32px 0 rgba(223, 224, 231, 0.37);
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(18.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-family: MontserratBlack;
+}
+.featurs .featurs-item:hover {
+	scale: (1.1);
+	box-shadow: 0 8px 32px 0 rgba(223, 224, 231, 0.37);
 }
 .featurs .featurs-item .features-content h4 {
 	color: var(--color-tertiary);
 	font: 600;
 }
+.text-yellow {
+	color: gold;
+}
 
 .featurs .featurs-item:hover {
-	background: var(--color-quaternary);
+	transform: scale(1.09);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+
 	transition-duration: 300ms;
 }
 .location-address {
@@ -342,12 +366,16 @@ nav .menu__link::before {
 	background-color: #0dae99;
 	/* background-image: var(--bg-svg1); */
 }
-.banner > h1 {
-	font-family: "Montserrat", sans-serif;
+.text-montserrat {
+	font-family: MontserratBlack;
 }
-.banner > .text-cocon {
-	font-family: "cocon";
-	font-size: 1.5rem;
+.text-cocon {
+	font-family: CoconCustom;
+	/* font-size: 1.5rem; */
+	/* font-weight: 200; */
+}
+.banner-img {
+	width: 100%;
 }
 
 .banner-2 {
@@ -373,6 +401,59 @@ nav .menu__link::before {
 	align-items: center;
 	background: #ecb15a;
 }
+.banner-heading {
+	font-family: MontserratBlack;
+	font-size: 4rem;
+}
+.banner-text {
+	font-size: 2rem;
+}
+.banner-text-2 {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.banner-2 {
+		height: 45vh;
+	}
+	.banner-heading {
+		font-family: MontserratBlack;
+		font-size: 3rem;
+	}
+	.banner-img {
+		width: 70%;
+	}
+	.banner-2 img {
+		position: absolute;
+		bottom: -250px;
+	}
+	.banner-3 {
+		width: 100%;
+		height: 70vh;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.banner-2 {
+		height: 38vh;
+	}
+	.banner-heading {
+		font-family: MontserratBlack;
+		font-size: 2rem;
+	}
+	.banner-img {
+		width: 70%;
+	}
+	.banner-2 img {
+		position: absolute;
+		bottom: -130px;
+	}
+	.banner-3 {
+		width: 100%;
+		height: 75vh;
+	}
+	.banner-text {
+		font-size: 1rem;
+	}
+}
+
 /*** Banner Section End ***/
 
 /*** Facts Start ***/
@@ -403,11 +484,20 @@ nav .menu__link::before {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.offer-section-heading {
+	color: #48e6d1;
+
+	font-size: 2rem;
+}
+.offer-section-text {
+	color: #ffffff;
+	font-size: 2rem;
+}
 
 /*** testimonial Start ***/
 .testimonial {
 	width: 100%;
-	padding-top: 5rem;
+	/* padding-top: 5rem; */
 	height: 50dvh;
 	overflow: hidden;
 	display: flex;
@@ -475,11 +565,33 @@ nav .menu__link::before {
 /*** Single Page End ***/
 
 /*** Footer Start ***/
+
+.footer-heading {
+	font-size: clamp(2.3rem, 2vw, 5rem);
+}
+.footer-heading span {
+	line-height: 0.7;
+	font-size: clamp(5.7rem, 2vw, 8rem);
+}
+.footer-subheading {
+	font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+}
+.footer-body {
+	font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+}
+.footer-contact {
+	font-size: clamp(2.5rem, 1.5vw, 4.5rem);
+}
+.footer-img {
+	width: 12rem;
+}
+.footer-copyright {
+	background-color: #0dae99;
+}
 .footer {
-	position: relative;
+	/* position: relative; */
 	background-color: #ccc2c23d;
-	/* opacity: 20%; */
-	background-image: url(../Pattern.svg);
+	background-image: url("../Pattern.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -543,7 +655,7 @@ nav .menu__link::before {
 /* We Serve card Card  */
 .card {
 	width: 300px;
-	height: 300px;
+	height: 260px;
 	position: relative;
 	background: #313131;
 	display: flex;
