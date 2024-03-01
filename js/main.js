@@ -60,41 +60,41 @@
 	// Testimonials data
 	var testimonials = [
 		{
-			image: "../img/review/Image1.jpg",
+			image: "./img/review/Image1.jpg",
 			name: "Akansha Ganguly",
 			stars: 5,
 			message:
 				"Bhikhaaram Chandmal Rajuji ke samose aur kachori, wahi purani yaadon ko taaza kar dete hain! Must try!",
 		},
 		{
-			image: "../img/review/Image-6.jpg",
+			image: "./img/review/Image-6.jpg",
 			name: "Raj Chandak",
 			stars: 4,
 			message:
 				"Bhikhaaram Chandmal Rajuji yani 100% swaad. Aisa swaad ko sabko jeet le",
 		},
 		{
-			image: "../img/review/image2.jpg",
+			image: "./img/review/image2.jpg",
 			name: "Muskan Patodia",
 			stars: 5,
 			message:
 				"Inki mithaiyan ekdum zabardast hai! Unki motichoor ladoo toh bas dil jeet lete hain! Ladoo yani Rajuji",
 		},
 		{
-			image: "../img/review/Image4.jpg",
+			image: "./img/review/Image4.jpg",
 			name: "Harsh Singh",
 			stars: 5,
 			message: "Agar kolkata aae toh Bhikhaaram Chandmal Rajuji zaroor jaana",
 		},
 		{
-			image: "../img/review/Image-5.jpg",
+			image: "./img/review/Image-5.jpg",
 			name: "Rajesh Mittal",
 			stars: 4,
 			message:
 				"Jalebi ho toh Bhikhaaram Chandmal Rajuji ki. Hazar baar kha ke bhi maan nhi bharta hai.",
 		},
 		{
-			image: "../img/review/Image3.jpg",
+			image: "./img/review/Image3.jpg",
 			name: "Hitesh Rathi",
 			stars: 5,
 			message:

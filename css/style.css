@@ -1,11 +1,15 @@
-@font-face {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* @font-face {
 	font-family: CoconCustom;
 	src: url("/css/CoconRegularFont.otf");
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: MontserratBlack;
 	src: url("/css/Montserrat-Black.ttf");
-}
+} */
 * {
 	padding: 0;
 	margin: 0;
@@ -259,12 +263,12 @@ nav .menu__link::before {
 .location {
 	padding-top: 1rem;
 	text-align: center;
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 	/* margin-top: 4rem; */
 }
 .location h1 {
 	font-size: 3rem;
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 
 	color: rgb(120, 63, 42);
 }
@@ -275,7 +279,7 @@ nav .menu__link::before {
 	-webkit-backdrop-filter: blur(18.5px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 }
 .featurs .featurs-item:hover {
 	scale: (1.1);
@@ -299,7 +303,7 @@ nav .menu__link::before {
 .location-address {
 	color: rgb(101, 100, 100);
 	font-weight: 100;
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 	text-transform: capitalize;
 	font-size: 0.9rem;
 	text-justify: inter-word;
@@ -345,10 +349,10 @@ nav .menu__link::before {
 	/* background-image: var(--bg-svg1); */
 }
 .text-montserrat {
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 }
 .text-cocon {
-	font-family: CoconCustom;
+	font-family: "Oswald", sans-serif;
 	/* font-size: 1.5rem; */
 	/* font-weight: 200; */
 }
@@ -380,7 +384,7 @@ nav .menu__link::before {
 	background: #ecb15a;
 }
 .banner-heading {
-	font-family: MontserratBlack;
+	font-family: "Montserrat", sans-serif;
 	font-size: 4rem;
 }
 .banner-text {
@@ -395,7 +399,7 @@ nav .menu__link::before {
 		height: 45vh;
 	}
 	.banner-heading {
-		font-family: MontserratBlack;
+		font-family: "Montserrat", sans-serif;
 		font-size: 3rem;
 	}
 	.banner-img {
@@ -425,7 +429,7 @@ nav .menu__link::before {
 		height: 38vh;
 	}
 	.banner-heading {
-		font-family: MontserratBlack;
+		font-family: "Montserrat", sans-serif;
 		font-size: 2rem;
 	}
 	.banner-img {
