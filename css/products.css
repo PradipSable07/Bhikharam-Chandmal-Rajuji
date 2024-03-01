@@ -19,7 +19,7 @@
 .snaks-banner {
 	/* width: 100%; */
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	background-image: url("../img/banners/Snacks_banner_web.jpg");
 	background-position: center;
 	background-size: cover;
@@ -27,7 +27,7 @@
 }
 .cookies-banner {
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	background-image: url("../img/banners/Cookie_banner_web.jpg");
 	background-position: center;
 	background-size: cover;
@@ -35,7 +35,7 @@
 }
 .sweets-banner {
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	background-image: url("../img/banners/Gulab_jamun_Banner_web.jpg");
 	background-position: center;
 	background-size: cover;
@@ -43,7 +43,7 @@
 }
 .namkeens-banner {
 	width: 100%;
-	height: 100vh;
+	height: 100dvh;
 	background-image: url("../img/banners/Namkeen_Banner_web.jpg");
 	background-position: center;
 	background-size: cover;
@@ -52,7 +52,7 @@
 @media only screen and (max-width: 480px) {
 	.snaks-banner {
 		width: 100%;
-		height: 50vh;
+		height: 50dvh;
 		background-image: url("../img/banners/Snacks_banner_mob.jpg");
 		background-position: center;
 		background-size: contain;

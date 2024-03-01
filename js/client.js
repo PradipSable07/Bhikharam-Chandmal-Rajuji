@@ -8,7 +8,7 @@ const clients = [
 	{ name: "IRCTC", photo: "../img/clients/IRCTC.png" },
 	{ name: "JSW", photo: "../img/clients/jsw.png" },
 	{ name: "LG", photo: "../img/clients/LG.png" },
-	{ name: "Shyam steel", photo: "../img/clients/Shyam_steel.png" },
+	{ name: "Shyam Steel", photo: "../img/clients/Shyam_steel.png" },
 	{ name: "Star Cement", photo: "../img/clients/Star-Cement.png" },
 	// Add more clients as needed
 ];

@@ -16,7 +16,7 @@
 }
 .pattern {
 	background-image: url("../img/svg/Pattern.svg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 .orange {
