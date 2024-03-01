@@ -363,7 +363,7 @@ nav .menu__link::before {
 }
 .banner-2 img {
 	position: absolute;
-	bottom: -460px;
+	bottom: -20rem;
 }
 .banner-3 {
 	width: 100%;
@@ -444,7 +444,7 @@ nav .menu__link::before {
 	}
 	.banner-2 img {
 		position: absolute;
-		bottom: -250px;
+		bottom: -22rem;
 	}
 	.banner-3 {
 		width: 100%;
@@ -480,7 +480,7 @@ nav .menu__link::before {
 	}
 	.banner-2 img {
 		position: absolute;
-		bottom: -80px;
+		bottom: -5.5rem;
 	}
 	.banner-3 {
 		width: 100%;
