@@ -2,22 +2,22 @@
 const namkeenProducts = [
 	{
 		name: "Product 1",
-		photo: "../img/Rajuji Products/10.png",
+		photo: "./img/Rajuji Products/10.png",
 		description: "Description of Product 1",
 	},
 	{
 		name: "Product 1",
-		photo: "../img/Rajuji Products/10.png",
+		photo: "./img/Rajuji Products/10.png",
 		description: "Description of Product 1",
 	},
 	{
 		name: "Product 2",
-		photo: "../img/Rajuji Products/11.png",
+		photo: "./img/Rajuji Products/11.png",
 		description: "Description of Product 2",
 	},
 	{
 		name: "Product 3",
-		photo: "../img/Rajuji Products/12.png",
+		photo: "./img/Rajuji Products/12.png",
 		description: "Description of Product 3",
 	},
 ];
@@ -29,7 +29,7 @@ function createProductCard(product) {
     <div class="rounded sweets-card">
         <div class="">
             <img src="${product.photo}"
-                class="img-fluid w-100 rounded-top" alt="" />
+                class="img-fluid w-100 rounded-top" alt=${product.name />
         </div>
 
         <div

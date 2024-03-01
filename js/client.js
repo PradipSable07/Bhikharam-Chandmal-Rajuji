@@ -1,15 +1,15 @@
 // Sample data for clients
 const clients = [
-	{ name: "Ambuja Cement", photo: "../img/clients/Ambuja_cement.png" },
-	{ name: "Asian Paints", photo: "../img/clients/Asian-Paints.png" },
-	{ name: "Blue Star", photo: "../img/clients/BlueStar.png" },
-	{ name: "Britania", photo: "../img/clients/britania.png" },
-	{ name: "GRSE", photo: "../img/clients/GRSE.png" },
-	{ name: "IRCTC", photo: "../img/clients/IRCTC.png" },
-	{ name: "JSW", photo: "../img/clients/jsw.png" },
-	{ name: "LG", photo: "../img/clients/LG.png" },
-	{ name: "Shyam Steel", photo: "../img/clients/Shyam_steel.png" },
-	{ name: "Star Cement", photo: "../img/clients/Star-Cement.png" },
+	{ name: "Ambuja Cement", photo: "./img/clients/Ambuja_cement.png" },
+	{ name: "Asian Paints", photo: "./img/clients/Asian-Paints.png" },
+	{ name: "Blue Star", photo: "./img/clients/BlueStar.png" },
+	{ name: "Britania", photo: "./img/clients/britania.png" },
+	{ name: "GRSE", photo: "./img/clients/GRSE.png" },
+	{ name: "IRCTC", photo: "./img/clients/IRCTC.png" },
+	{ name: "JSW", photo: "./img/clients/jsw.png" },
+	{ name: "LG", photo: "./img/clients/LG.png" },
+	{ name: "Shyam Steel", photo: "./img/clients/Shyam_steel.png" },
+	{ name: "Star Cement", photo: "./img/clients/Star-Cement.png" },
 	// Add more clients as needed
 ];
 

@@ -127,7 +127,7 @@
 			.attr("src", testimonial.image)
 			.addClass("img-fluid  rounded-circle")
 			.css({ width: "100px", height: "100px" })
-			.attr("alt", "");
+			.attr("alt", testimonial.name);
 		var textWrapper = $("<div>").addClass("ms-4 d-block");
 		var authorName = $("<h4>")
 			.addClass("text-white text-montserrat")
