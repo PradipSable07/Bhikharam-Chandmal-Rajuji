@@ -375,6 +375,8 @@ nav .menu__link::before {
 }
 .banner-heading {
 	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	color: #393535;
 	font-size: 4rem;
 }
 .banner-text {
@@ -382,38 +384,43 @@ nav .menu__link::before {
 }
 /* .banner-text-2 {
 } */
-.hero .c-item {
-	height: 88dvh;
+
+.hero .web {
+	width: 100%;
+	height: 100dvh;
 	overflow: hidden;
 }
+.hero .mobile {
+	display: none;
+}
 
-.c-item-1 {
+/* .c-item-1 {
 	background-image: url("../img/banners/Holi_banner_web.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .c-item-2 {
 	background-image: url("../img/banners/Banner_1.png");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .c-item-3 {
 	background-image: url("../img/banners/bhikaram_banner_2.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .c-item-4 {
 	background-image: url("../img/banners/Banner_Bhujiya_web.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .c-item-5 {
 	background-image: url("../img/banners/Pastrt_banner_web.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -422,7 +429,7 @@ nav .menu__link::before {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-}
+} */
 /* Responsive media : tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.banner-2 {
@@ -455,6 +462,12 @@ nav .menu__link::before {
 /* mobile responsive */
 
 @media only screen and (max-width: 480px) {
+	.hero .web {
+		display: none;
+	}
+	.hero .mobile {
+		display: block;
+	}
 	.banner-2 {
 		height: 38vh;
 	}
@@ -490,8 +503,9 @@ nav .menu__link::before {
 	}
 	.hero .c-item {
 		width: 100%;
-		height: 48dvh;
+		height: 46dvh;
 	}
+	/* }
 	.c-item-1 {
 		background-image: url("../img/banners/Banner_Bhujiya_Mobile.jpg");
 		background-size: cover;
@@ -533,7 +547,7 @@ nav .menu__link::before {
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-	}
+	} */
 }
 
 /*** Banner Section End ***/
@@ -967,6 +981,7 @@ nav .menu__link::before {
 	height: 300px;
 	background: var(--color-secondary);
 	display: flex;
+	color: #e8e8e8;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
