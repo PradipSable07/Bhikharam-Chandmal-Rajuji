@@ -217,16 +217,6 @@ nav .menu__link::before {
 
 /*** Hero Header ***/
 
-.hero .c-item {
-	height: 100vh;
-	overflow: hidden;
-}
-
-.c-img {
-	height: 100%;
-	/* filter: brightness(0.9); */
-}
-
 .carousel-control-next,
 .carousel-control-prev {
 	width: 48px;
@@ -392,11 +382,51 @@ nav .menu__link::before {
 }
 /* .banner-text-2 {
 } */
+.hero .c-item {
+	height: 88dvh;
+	overflow: hidden;
+}
 
+.c-item-1 {
+	background-image: url("../img/banners/Holi_banner_web.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.c-item-2 {
+	background-image: url("../img/banners/Banner_1.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.c-item-3 {
+	background-image: url("../img/banners/bhikaram_banner_2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.c-item-4 {
+	background-image: url("../img/banners/Banner_Bhujiya_web.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.c-item-5 {
+	background-image: url("../img/banners/Pastrt_banner_web.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.c-item-6 {
+	background-image: url("../img/banners/Banner_soan_papdi_web.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 /* Responsive media : tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.banner-2 {
-		height: 45vh;
+		height: 45dvh;
 	}
 	.banner-heading {
 		font-family: "Montserrat", sans-serif;
@@ -411,15 +441,15 @@ nav .menu__link::before {
 	}
 	.banner-3 {
 		width: 100%;
-		height: 60vh;
+		height: 60dvh;
 	}
 	.card {
 		margin: 0.5rem;
 		padding: 0;
 	}
-	.c-item {
+	.hero .c-item {
 		width: 100%;
-		height: 40vh;
+		height: 86dvh;
 	}
 }
 /* mobile responsive */
@@ -437,7 +467,7 @@ nav .menu__link::before {
 	}
 	.banner-2 img {
 		position: absolute;
-		bottom: -105px;
+		bottom: -80px;
 	}
 	.banner-3 {
 		width: 100%;
@@ -457,6 +487,52 @@ nav .menu__link::before {
 	}
 	.card {
 		margin: 0.5rem;
+	}
+	.hero .c-item {
+		width: 100%;
+		height: 48dvh;
+	}
+	.c-item-1 {
+		background-image: url("../img/banners/Banner_Bhujiya_Mobile.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-2 {
+		background-image: url("../img/banners/Besan_laddu_Banner_Mobile.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-3 {
+		background-image: url("../img/banners/Pastry_banner_mob.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-4 {
+		background-image: url("../img/banners/Namkeen_Banner_mob.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-5 {
+		background-image: url("../img/banners/Pastry_banner_mob.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-5 {
+		background-image: url("../img/banners/Banner_soan_papdi_mob.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-item-6 {
+		background-image: url("../img/banners/Cookie_banner_mob.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 }
 
