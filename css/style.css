@@ -376,7 +376,8 @@ nav .menu__link::before {
 .banner-heading {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 900;
-	color: #393535;
+	color: #ffffff;
+	text-transform: uppercase;
 	font-size: 4rem;
 }
 .banner-text {
