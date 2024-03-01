@@ -48,41 +48,43 @@
     <!-- Spinner End -->
 
     <!-- Navbar start -->
-    <!-- <header class="container-fluid py-2 nav-header ">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 text-center">
-                <div class="logo ">
-                    <img src="../logo_site_full.jpg" alt="Logo" class="img-fluid header-img" />
-                </div>
-            </div>
-        </div>
-    </header> -->
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-transparent sticky-top bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../logo_site_full.jpg" alt="Logo" class="d-lg-none d-md-none w-25 h-25" />
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="/index.html">
+                <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo"
+                    class="d-lg-none d-md-none w-25 h-25" />
             </a>
             <button class="navbar-toggler p-1 bg-light rounded-circle" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-md-center align-content-md-center"
                 id="navbarNav">
-                <ul class="navbar-nav font-weight-bold align-items-md-center">
-                    <li class="nav-item  ">
-                        <a class="nav-link " href="index.html">Home</a>
+                <ul class="navbar-nav font-weight-bold align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="./about.html">About Us</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./products.html">Our Products</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu border-0 text-center " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./sweets.html">Sweets</a></li>
+                            <li><a class="dropdown-item" href="./namkeen.html">Namkeens</a></li>
+                            <li><a class="dropdown-item" href="./snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="./cookies.html">Cookies</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item text-center  d-none d-md-block d-lg-block">
-                        <img src="/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo" class=" nav-png " />
+                    <li class="nav-item navbar-brand text-center d-none accordion-body d-md-block d-lg-block">
+                        <a class="" href="#">
+                            <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo" class="nav-png" />
+                        </a>
                     </li>
-
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./clients.html">Our Clients</a>
                     </li>
                     <li class="nav-item">
@@ -102,7 +104,7 @@
     <article class="container-fluid  overflow-hidden ">
         <div class="container py-5">
             <div class="row g-4 align-items-center">
-                <div class="col-lg-4 text-start">
+                <div class="col-lg-4 text-montserrat text-start">
                     <h1>Our Clients</h1>
                 </div>
 
@@ -119,21 +121,50 @@
             </div>
         </div>
     </section>
-
-
     <!-- client start  -->
 
 
 
+    <!-- Offer Section start -->
+
+    <div class="offer-section container-fluid  ">
+        <div class="container py-lg-5 py-md-2 bg-transparent p-3 bg-body">
+            <div class="row text-center">
+                <div class="col-lg-6 text-start ">
+                    <h3 class="offer-section-heading text-montserrat text-uppercase">
+                        For Corporate Inquiries
+
+                    </h3>
+                    <p class="offer-section-text text-cocon text-capitalize "> Contact us : 98319 93251</p>
+                </div>
+                <div class="col-lg-6 text-end ">
+                    <h3 class="offer-section-heading text-montserrat text-uppercase">
+                        For Wholesale Inquiries
+
+                    </h3>
+                    <p class="offer-section-text text-cocon text-capitalize "> Contact us : 93312 13544</p>
+                </div>
 
 
-    <!-- testimonial start -->
-    <section class="testimonial">
-        <div class="owl-carousel owl-theme">
-            <!-- Testimonial items will be dynamically added here -->
+            </div>
         </div>
-    </section>
+
+
+        <!-- Offer Section start -->
+
+        <!-- testimonial start -->
+        <h1 class="text-center mb-0 text-montserrat text-white text-capitalize">
+            Customer Feedbacks
+        </h1>
+        <section class="testimonial">
+            <div class="owl-carousel owl-theme">
+                <!-- Testimonial items will be dynamically added here -->
+            </div>
+        </section>
+    </div>
     <!-- testimonial end -->
+
+
 
 
     <!-- Footer Start -->
@@ -153,7 +184,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center  ">
-                    <img src="/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid footer-img" alt="">
+                    <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid footer-img" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column justify-content-center align-items-end gap-2 ">
@@ -176,6 +207,13 @@
                             <a class="btn btn-outline-dark btn-md-square rounded-circle"
                                 href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
                                 <i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-dark btn-md-square swiggy rounded-circle mx-2"
+                                href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
+                                <img src="./img/svg/swiggy.svg" class="img-fluid w-75" alt=""></a>
+                            <a class="btn btn-outline-dark btn-md-square zomato rounded-circle"
+                                href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
+                                <img src="./img/svg/zomato.svg" class="img-fluid w-75 rounded" alt=""></a>
+
                         </div>
 
                     </div>

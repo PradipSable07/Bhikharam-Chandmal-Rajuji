@@ -38,6 +38,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+
 </head>
 
 <body>
@@ -50,40 +52,44 @@
     <!-- Spinner End -->
 
     <!-- Navbar start -->
-    <!-- <header class="container-fluid py-2 nav-header ">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 text-center">
-                <div class="logo ">
-                    <img src="../logo_site_full.jpg" alt="Logo" class="img-fluid header-img" />
-                </div>
-            </div>
-        </div>
-    </header> -->
+
+    <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-transparent sticky-top bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../logo_site_full.jpg" alt="Logo" class="d-lg-none d-md-none w-25 h-25" />
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="/index.html">
+                <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo"
+                    class="d-lg-none d-md-none w-25 h-25" />
             </a>
             <button class="navbar-toggler p-1 bg-light rounded-circle" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-md-center align-content-md-center"
                 id="navbarNav">
-                <ul class="navbar-nav font-weight-bold align-items-md-center">
-                    <li class="nav-item ">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
+                <ul class="navbar-nav font-weight-bold align-items-center">
                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./about.html">About Us</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./products.html">Our Products</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <ul class="dropdown-menu border-0 text-center " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./sweets.html">Sweets</a></li>
+                            <li><a class="dropdown-item" href="#">Namkeens</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Cookies</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item text-center  d-none d-md-block d-lg-block">
-                        <img src="/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo" class=" nav-png " />
+                    <li class="nav-item navbar-brand text-center d-none accordion-body d-md-block d-lg-block">
+                        <a class="" href="#">
+                            <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" alt="Logo" class="nav-png" />
+                        </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="./clients.html">Our Clients</a>
                     </li>
@@ -97,14 +103,14 @@
             </div>
         </div>
     </nav>
-
     <!-- Navbar End -->
+
 
     <!-- Heading -->
     <article class="container-fluid  overflow-hidden ">
         <div class="container py-5">
             <div class="row g-4 align-items-center">
-                <div class="col-lg-4 text-start">
+                <div class="col-lg-4 text-montserrat text-start">
                     <h1>About Us</h1>
                 </div>
 
@@ -113,11 +119,11 @@
     </article>
 
     <!-- Our Story -->
-    <section class="container-fluid  overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+    <section class="container-fluid pattern overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-grid  justify-content-center align-content-center ">
-                    <img src="./logo_site_full.jpg" class="img-fluid w-100 h-100" alt="">
+                <div class="col-lg-6 d-flex  justify-content-center align-content-center ">
+                    <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid w-75" alt="">
                 </div>
                 <div class="col-lg-6  p-5">
                     <h1 class="display-3">Our Story</h1>
@@ -140,150 +146,180 @@
 
     <!-- Directors desk -->
 
-    <section class="container overflow-hidden" data-aos="zoom-in" data-aos-delay="225">
-        <div class="row">
+    <section class="container-fluid pt-5 pattern overflow-hidden" data-aos="zoom-in" data-aos-delay="225">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-lg-6 bg-body">
-                <h1 class="display-3">Director's Desk</h1>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">Dear Valued Patrons,</p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    I am delighted to extend a warm welcome to you on behalf of Bhikharam Chandmal Rajuji, a culinary
-                    journey that commenced in 1923 in the heart of Bikaner. Founded by Late Bhikharam and his son Late
-                    Chandmal, our story began with the creation of a family-invented delicacy – bhujia. This humble
-                    beginning quickly captured the hearts and palates of many.
+                <div class="col-lg-6">
+                    <h1 class="display-3">Director's Desk</h1>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">Dear Valued Patrons,
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        I am delighted to extend a warm welcome to you on behalf of Bhikharam Chandmal Rajuji, a
+                        culinary
+                        journey that commenced in 1923 in the heart of Bikaner. Founded by Late Bhikharam and his son
+                        Late
+                        Chandmal, our story began with the creation of a family-invented delicacy – bhujia. This humble
+                        beginning quickly captured the hearts and palates of many.
 
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    As our family expanded, Late Kishan Gopal ji Agarwal took our flavors to Kolkata, establishing a
-                    small
-                    haven for Bhujia and renowned Rajasthan sweets in 1968. Through the years, the guidance of Shri Raj
-                    Kumar ji Agarwal and the collective efforts of our dedicated team have propelled Bhikharam Chandmal
-                    Rajuji into a symbol of excellence. Our commitment to exceptional taste, unwavering quality, and
-                    stringent hygiene standards has been the hallmark of our journey.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    Today, with eight outlets in Kolkata and a daily clientele exceeding 5000, we are proud to share the
-                    richness of our experience – spanning over a century – with the people of India. Now, we are excited
-                    to
-                    take our authentic Indian sweets and snacks beyond borders, offering favorites such as Bhujiya, Tok
-                    Jhal
-                    Misti, Khasta Mix, Khatta Meetha, Jhal Chanchur, Cornflakes Mix, Mini Kachori & Samosa, Namkeen
-                    Swali, Methi Swali, Gulabjamun, Rosogolla, Anguri Petha, Soanpapdi, Rajbhog, Besan Laddu, and Lachha
-                    to a global audience.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    Our vision is to make these beloved creations accessible to all who cherish the flavors of Indian
-                    cuisine.
-                    We aim to provide the highest quality foods at the most competitive rates in the market. Thank you
-                    for
-                    being a part of our journey, and we look forward to sharing the joy of our authentic culinary
-                    offerings with
-                    you.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    Sincerely,
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    Raj Kumar Agarwal
-                </p>
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        As our family expanded, Late Kishan Gopal ji Agarwal took our flavors to Kolkata, establishing a
+                        small
+                        haven for Bhujia and renowned Rajasthan sweets in 1968. Through the years, the guidance of Shri
+                        Raj
+                        Kumar ji Agarwal and the collective efforts of our dedicated team have propelled Bhikharam
+                        Chandmal
+                        Rajuji into a symbol of excellence. Our commitment to exceptional taste, unwavering quality, and
+                        stringent hygiene standards has been the hallmark of our journey.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Today, with eight outlets in Kolkata and a daily clientele exceeding 5000, we are proud to share
+                        the
+                        richness of our experience – spanning over a century – with the people of India. Now, we are
+                        excited
+                        to
+                        take our authentic Indian sweets and snacks beyond borders, offering favorites such as Bhujiya,
+                        Tok
+                        Jhal
+                        Misti, Khasta Mix, Khatta Meetha, Jhal Chanchur, Cornflakes Mix, Mini Kachori & Samosa, Namkeen
+                        Swali, Methi Swali, Gulabjamun, Rosogolla, Anguri Petha, Soanpapdi, Rajbhog, Besan Laddu, and
+                        Lachha
+                        to a global audience.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Our vision is to make these beloved creations accessible to all who cherish the flavors of
+                        Indian
+                        cuisine.
+                        We aim to provide the highest quality foods at the most competitive rates in the market. Thank
+                        you
+                        for
+                        being a part of our journey, and we look forward to sharing the joy of our authentic culinary
+                        offerings with
+                        you.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Sincerely,
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Raj Kumar Agarwal
+                    </p>
 
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
-                    Chairman, Bhikharam Chandmal Rajuji
-                </p>
-            </div>
-            <div class="col-lg-6 d-grid justify-content-center align-content-center ">
-                <img src="./img/avatar.jpg" class="img-fluid " alt="">
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Chairman, Bhikharam Chandmal Rajuji
+                    </p>
+                </div>
+                <div class="col-lg-6 d-grid justify-content-center  align-content-end ">
+                    <img src="./img/aboutpage/Director.png" class="img-fluid " alt="">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Our Vision -->
-    <section class="container py-5 overflow-hidden" data-aos="zoom-in" data-aos-delay="250">
-        <div class="row">
-            <div class="col-lg-6 d-grid justify-content-center align-content-center ">
-                <img src="./img/avatar.jpg" class="img-fluid " alt="">
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-3">Our Vision</h1>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">At Bhikharam Chandmal
-                    Rajuji, our
-                    vision is to transcend borders and bring
-                    the rich tapestry of
-                    our culinary heritage to every corner of the globe. Established in 1923, our journey began with a
-                    family's passion for crafting exceptional flavors, starting with the beloved bhujia.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">With over a century of
-                    experience, we
-                    have evolved into a symbol of excellence under the
-                    guidance of Shri Raj Kumar ji Agarwal. Today, our eight outlets in Kolkata serve over 5000
-                    clients daily, reflecting our commitment to exceptional taste, unwavering quality, and stringent
-                    hygiene standards.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">Looking ahead, we aspire
-                    to share our
-                    authentic Indian sweets and snacks, including
-                    favorites
-                    like Bhujiya, Tok Jhal Misti, Khasta Mix, Khatta Meetha, Jhal Chanchur, Cornflakes Mix, Mini
-                    Kachori & Samosa, Namkeen Swali, Methi Swali, Gulabjamun, Rosogolla, Anguri Petha,
-                    Soanpapdi, Rajbhog, Besan Laddu, and Lachha, with the world. Our vision is to make these
-                    cherished creations accessible to all who appreciate the essence of Indian cuisine.
-                </p>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">As we embark on this
-                    global journey,
-                    we remain steadfast in our commitment to providing the
-                    highest quality foods at the most competitive rates in the market. Thank you for being part of our
-                    story, and we eagerly anticipate sharing the joy of our authentic culinary offerings with a global
-                    audience.
-                    "
-                </p>
-            </div>
+    <section class="container-fluid orange py-5  overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-grid bg-dark-blue justify-content-center align-content-center ">
+                    <img src="./img/logo/Vision_logo.png" class="img-fluid " alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-3">Our Vision</h1>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">At Bhikharam Chandmal
+                        Rajuji, our
+                        vision is to transcend borders and bring
+                        the rich tapestry of
+                        our culinary heritage to every corner of the globe. Established in 1923, our journey began with
+                        a
+                        family's passion for crafting exceptional flavors, starting with the beloved bhujia.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">With over a century
+                        of
+                        experience, we
+                        have evolved into a symbol of excellence under the
+                        guidance of Shri Raj Kumar ji Agarwal. Today, our eight outlets in Kolkata serve over 5000
+                        clients daily, reflecting our commitment to exceptional taste, unwavering quality, and stringent
+                        hygiene standards.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">Looking ahead, we
+                        aspire
+                        to share our
+                        authentic Indian sweets and snacks, including
+                        favorites
+                        like Bhujiya, Tok Jhal Misti, Khasta Mix, Khatta Meetha, Jhal Chanchur, Cornflakes Mix, Mini
+                        Kachori & Samosa, Namkeen Swali, Methi Swali, Gulabjamun, Rosogolla, Anguri Petha,
+                        Soanpapdi, Rajbhog, Besan Laddu, and Lachha, with the world. Our vision is to make these
+                        cherished creations accessible to all who appreciate the essence of Indian cuisine.
+                    </p>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">As we embark on this
+                        global journey,
+                        we remain steadfast in our commitment to providing the
+                        highest quality foods at the most competitive rates in the market. Thank you for being part of
+                        our
+                        story, and we eagerly anticipate sharing the joy of our authentic culinary offerings with a
+                        global
+                        audience.
+                        "
+                    </p>
+                </div>
 
+            </div>
         </div>
     </section>
 
 
     <!-- Our Mission -->
-    <section class="container py-5 overflow-hidden" data-aos="zoom-in" data-aos-delay="275">
-        <div class="row">
+    <section class="container-fluid orange py-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-lg-6">
-                <h3 class="display-3">Our Mission</h3>
-                <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">"At Bhikharam Chandmal
-                    Rajuji, our
-                    mission is driven by a passion to share
-                    the authentic flavors
-                    of India with the world. We are dedicated to creating a positive impact by:
-                <ol class=" text-body text-justify " data-aos="zoom-in" data-aos-delay="260">
-                    <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Introducing Authentic Indian Products
-                        Globally: Our primary goal is to bring the
-                        true taste of authentic Indian products to every corner of the world, allowing people worldwide
-                        to savor the richness of our culinary heritage.</li>
-                    <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Generating Employment Opportunities: We
-                        strive to contribute to the economic growth
-                        of the countries where we sell our products by creating more and more employment opportunities,
-                        fostering prosperity and well-being.</li>
-                    <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Supporting Dealers with Hassle-Free
-                        Business: For our dealers, we aim to provide a
-                        hassle-free business experience by offering 0% royalty for the first two years, ensuring their
-                        success and growth.</li>
-                    <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Expansion in Modern Retail Businesses: We
-                        aspire to register ourselves in an
-                        increasing number of modern retail businesses outside India, making it convenient for people to
-                        access our products easily.</li>
-                    <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Ensuring a Win-Win Situation for Vendors
-                        and Dealers: We commit to maintaining a
-                        profit percentage higher than our peers, establishing a win-win situation for our vendors and
-                        dealers, fostering mutually beneficial relationships.</li>
-                </ol>
-                <p data-aos="zoom-in" data-aos-delay="260">
-                    Our mission goes beyond business; it is about creating meaningful connections, fostering
-                    growth, and enriching lives through the joy of our products. Together, let's embark on a journey
-                    of shared success and culinary delight.
-                    "
-                </p>
-            </div>
-            <div class="col-lg-6 d-grid justify-content-center align-content-center ">
-                <img src="./img/avatar.jpg" class="img-fluid " alt="">
+                <div class="col-lg-6 pt-lg-2">
+                    <h3 class="display-3">Our Mission</h3>
+                    <p class="mb-4 text-body text-justify" data-aos="zoom-in" data-aos-delay="260">"At Bhikharam
+                        Chandmal
+                        Rajuji, our
+                        mission is driven by a passion to share
+                        the authentic flavors
+                        of India with the world. We are dedicated to creating a positive impact by:
+                    <ol class=" text-body text-justify " data-aos="zoom-in" data-aos-delay="260">
+                        <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Introducing Authentic Indian Products
+                            Globally: Our primary goal is to bring the
+                            true taste of authentic Indian products to every corner of the world, allowing people
+                            worldwide
+                            to savor the richness of our culinary heritage.</li>
+                        <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Generating Employment Opportunities: We
+                            strive to contribute to the economic growth
+                            of the countries where we sell our products by creating more and more employment
+                            opportunities,
+                            fostering prosperity and well-being.</li>
+                        <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Supporting Dealers with Hassle-Free
+                            Business: For our dealers, we aim to provide a
+                            hassle-free business experience by offering 0% royalty for the first two years, ensuring
+                            their
+                            success and growth.</li>
+                        <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Expansion in Modern Retail Businesses:
+                            We
+                            aspire to register ourselves in an
+                            increasing number of modern retail businesses outside India, making it convenient for people
+                            to
+                            access our products easily.</li>
+                        <li class="mb-4" data-aos="zoom-in" data-aos-delay="260">Ensuring a Win-Win Situation for
+                            Vendors
+                            and Dealers: We commit to maintaining a
+                            profit percentage higher than our peers, establishing a win-win situation for our vendors
+                            and
+                            dealers, fostering mutually beneficial relationships.</li>
+                    </ol>
+                    <p class="text-justify" data-aos="zoom-in" data-aos-delay="260">
+                        Our mission goes beyond business; it is about creating meaningful connections, fostering
+                        growth, and enriching lives through the joy of our products. Together, let's embark on a journey
+                        of shared success and culinary delight.
+                        "
+                    </p>
+                </div>
+                <div class="col-lg-6 pt-lg-2 d-grid bg-dark-orange justify-content-center align-content-center ">
+                    <img src="./img/logo/Mission_logo.png" class="img-fluid " alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -295,16 +331,16 @@
         <h2 class="display-3">Certificates</h2>
         <div class="row justify-content-center">
             <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="275">
-                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Certificate 1">
+                <img src="./img/certificates/Certificate (1).png" class="img-fluid" alt="Certificate 1">
             </div>
             <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="300">
-                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Certificate 2">
+                <img src="./img/certificates/Certificate (2).png" class="img-fluid" alt="Certificate 2">
             </div>
             <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="325">
-                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Certificate 3">
+                <img src="./img/certificates/Certificate (3).png" class="img-fluid" alt="Certificate 3">
             </div>
             <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="300">
-                <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Certificate 4">
+                <img src="./img/certificates/Certificate (4).png" class="img-fluid" alt="Certificate 4">
             </div>
             <!-- Add more certificate images with similar structure -->
         </div>
@@ -329,7 +365,7 @@
                     </p>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center  ">
-                    <img src="/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid footer-img" alt="">
+                    <img src="./img/logo/Logo_BhikhaaramChandmal_Rajuji.png" class="img-fluid footer-img" alt="">
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex flex-column justify-content-center align-items-end gap-2 ">
@@ -352,6 +388,13 @@
                             <a class="btn btn-outline-dark btn-md-square rounded-circle"
                                 href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
                                 <i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-dark btn-md-square swiggy rounded-circle mx-2"
+                                href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
+                                <img src="./img/svg/swiggy.svg" class="img-fluid w-75" alt=""></a>
+                            <a class="btn btn-outline-dark btn-md-square zomato rounded-circle"
+                                href="https://www.linkedin.com/company/bhikharam-chandmal-sweets-&-snacks-private-limited/">
+                                <img src="./img/svg/zomato.svg" class="img-fluid w-75 rounded" alt=""></a>
+
                         </div>
 
                     </div>

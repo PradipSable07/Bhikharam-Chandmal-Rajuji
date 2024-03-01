@@ -178,65 +178,65 @@
 			},
 		},
 	});
-	document.addEventListener("DOMContentLoaded", function () {
-		// Define marker positions and details
-		var markerData = [
-			{
-				lat: 22.58907753805742,
-				lng: 88.36656611541852,
-				title: "Marker 1",
-				details: "Details for Marker 1",
-			},
-			{
-				lat: 22.6,
-				lng: 88.4,
-				title: "Marker 2",
-				details: "Details for Marker 2",
-			},
-			// Add more markers as needed
-		];
+	// document.addEventListener("DOMContentLoaded", function () {
+	// 	// Define marker positions and details
+	// 	var markerData = [
+	// 		{
+	// 			lat: 22.58907753805742,
+	// 			lng: 88.36656611541852,
+	// 			title: "Marker 1",
+	// 			details: "Details for Marker 1",
+	// 		},
+	// 		{
+	// 			lat: 22.6,
+	// 			lng: 88.4,
+	// 			title: "Marker 2",
+	// 			details: "Details for Marker 2",
+	// 		},
+	// 		// Add more markers as needed
+	// 	];
 
-		// Create markers for each position
-		markerData.forEach(function (data) {
-			var marker = document.createElement("img");
-			marker.src = "marker.png"; // Replace 'marker.png' with your marker image URL
-			marker.alt = data.title;
-			marker.width = 32;
-			marker.height = 32;
-			marker.style.position = "absolute";
-			marker.style.transform = "translate(-50%, -50%)"; // Center marker on position
-			marker.style.top = (data.lat - 22.58907753805742) / 0.0001 + "%"; // Adjust position relative to map
-			marker.style.left = (data.lng - 88.36656611541852) / 0.0001 + "%"; // Adjust position relative to map
-			marker.dataset.details = data.details;
+	// 	// Create markers for each position
+	// 	markerData.forEach(function (data) {
+	// 		var marker = document.createElement("img");
+	// 		marker.src = "marker.png"; // Replace 'marker.png' with your marker image URL
+	// 		marker.alt = data.title;
+	// 		marker.width = 32;
+	// 		marker.height = 32;
+	// 		marker.style.position = "absolute";
+	// 		marker.style.transform = "translate(-50%, -50%)"; // Center marker on position
+	// 		marker.style.top = (data.lat - 22.58907753805742) / 0.0001 + "%"; // Adjust position relative to map
+	// 		marker.style.left = (data.lng - 88.36656611541852) / 0.0001 + "%"; // Adjust position relative to map
+	// 		marker.dataset.details = data.details;
 
-			// Append marker to map container
-			document.querySelector(".map-container").appendChild(marker);
+	// 		// Append marker to map container
+	// 		document.querySelector(".map-container").appendChild(marker);
 
-			// Add event listeners for marker hover
-			marker.addEventListener("mouseover", function (event) {
-				showMarkerPopup(event.target, data.title, data.details);
-			});
+	// 		// Add event listeners for marker hover
+	// 		marker.addEventListener("mouseover", function (event) {
+	// 			showMarkerPopup(event.target, data.title, data.details);
+	// 		});
 
-			marker.addEventListener("mouseout", function () {
-				hideMarkerPopup();
-			});
-		});
+	// 		marker.addEventListener("mouseout", function () {
+	// 			hideMarkerPopup();
+	// 		});
+	// 	});
 
-		// Function to show marker popup
-		function showMarkerPopup(marker, title, details) {
-			var popup = document.getElementById("marker-popup");
-			popup.innerHTML = "<h4>" + title + "</h4><p>" + details + "</p>";
-			popup.style.top = marker.offsetTop + 20 + "px"; // Adjust popup position
-			popup.style.left = marker.offsetLeft + 20 + "px"; // Adjust popup position
-			popup.classList.add("active");
-		}
+	// 	// Function to show marker popup
+	// 	function showMarkerPopup(marker, title, details) {
+	// 		var popup = document.getElementById("marker-popup");
+	// 		popup.innerHTML = "<h4>" + title + "</h4><p>" + details + "</p>";
+	// 		popup.style.top = marker.offsetTop + 20 + "px"; // Adjust popup position
+	// 		popup.style.left = marker.offsetLeft + 20 + "px"; // Adjust popup position
+	// 		popup.classList.add("active");
+	// 	}
 
-		// Function to hide marker popup
-		function hideMarkerPopup() {
-			var popup = document.getElementById("marker-popup");
-			popup.classList.remove("active");
-		}
-	});
+	// 	// Function to hide marker popup
+	// 	function hideMarkerPopup() {
+	// 		var popup = document.getElementById("marker-popup");
+	// 		popup.classList.remove("active");
+	// 	}
+	// });
 
 	// const togglefun = () => {
 	// 	const sidebar = document.querySelector("#side");

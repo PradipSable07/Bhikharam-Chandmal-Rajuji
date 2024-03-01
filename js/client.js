@@ -1,21 +1,26 @@
 // Sample data for clients
 const clients = [
-	{ name: "Client 1", photo: "https://via.placeholder.com/150" },
-	{ name: "Client 2", photo: "https://via.placeholder.com/150" },
-	{ name: "Client 3", photo: "https://via.placeholder.com/150" },
-	{ name: "Client 4", photo: "https://via.placeholder.com/150" },
-	{ name: "Client 5", photo: "https://via.placeholder.com/150" },
+	{ name: "Ambuja Cement", photo: "../img/clients/Ambuja_cement.png" },
+	{ name: "Asian Paints", photo: "../img/clients/Asian-Paints.png" },
+	{ name: "Blue Star", photo: "../img/clients/BlueStar.png" },
+	{ name: "Britania", photo: "../img/clients/britania.png" },
+	{ name: "GRSE", photo: "../img/clients/GRSE.png" },
+	{ name: "IRCTC", photo: "../img/clients/IRCTC.png" },
+	{ name: "JSW", photo: "../img/clients/jsw.png" },
+	{ name: "LG", photo: "../img/clients/LG.png" },
+	{ name: "Shyam steel", photo: "../img/clients/Shyam_steel.png" },
+	{ name: "Star Cement", photo: "../img/clients/Star-Cement.png" },
 	// Add more clients as needed
 ];
 
 // Function to dynamically create client cards
 function createClientCard(client) {
 	return `
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center align-items-center">
                 <div class="client-card">
                     <img src="${client.photo}" class="card-img-top" alt="${client.name}">
                     <div class="client-card-body">
-                        <h5 class="card-title">${client.name}</h5>
+                        <h5 class="card-title text-montserrat">${client.name}</h5>
                     </div>
                 </div>
             </div>
